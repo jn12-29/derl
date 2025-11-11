@@ -3,3 +3,4 @@ lxml
 gym==0.17.1
 networkx
 mujoco_py==2.0.2.8
+torch

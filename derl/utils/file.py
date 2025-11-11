@@ -14,7 +14,9 @@ def get_base_dir(docker=False):
     if docker:
         return "./output"
     else:
-        return "/home/derl/exp_dir"
+        cur_dir = os.path.dirname(os.path.abspath(__file__))
+        exp_dir = os.path.join(cur_dir, "../../exp_dir")
+        return exp_dir
 
 
 def get_files(_dir, reg_str, sort=False, sort_type=None):

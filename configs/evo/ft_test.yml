@@ -1,6 +1,6 @@
-OUT_DIR: './output/ft_test'
+OUT_DIR: "./output/ft_test"
 RNG_SEED: 1409
-ENV_NAME: 'Unimal-v0'
+ENV_NAME: "Unimal-v0"
 EVO:
   IS_EVO: true
   SELECTION_CRITERIA: ["__reward__forward"]
@@ -10,9 +10,9 @@ EVO:
   SEARCH_SPACE_SIZE: 8
 PPO:
   NUM_ENVS: 16
-  TIMESTEPS: 256
+  TIMESTEPS: 1000
   MAX_STATE_ACTION_PAIRS: 1e4
-  VIDEO_LENGTH: 10
+  VIDEO_LENGTH: 1000
 ENV:
   MODULES: ["Agent", "Terrain"]
   TASK: "locomotion"
