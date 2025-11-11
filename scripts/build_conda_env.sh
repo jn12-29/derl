@@ -1,6 +1,4 @@
-conda create -n derl --clone py312
-
-conda create -n derl python=3.12
+conda create -n derl python=3.8
 
 conda activate derl
 
